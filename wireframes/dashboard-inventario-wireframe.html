@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Inventario - Consultorio Oftalmológico</title>
+    <link href="styles-wire.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Dashboard de Inventario - Consultorio Oftalmológico</h1>
+        <nav>
+            <ul>
+                <li><a href="/index-wareframes.html">Enlaces</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="dashboard-section" id="medicamentos">
+            <div class="section-title">Inventario de Medicamentos</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Stock</th>
+                        <th>Fecha de Caducidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Medicamento 1</td>
+                        <td>Tipo 1</td>
+                        <td>Stock</td>
+                        <td>Fecha</td>
+                    </tr>
+                    <tr>
+                        <td>Medicamento 2</td>
+                        <td>Tipo 2</td>
+                        <td>Stock</td>
+                        <td>Fecha</td>
+                    </tr>
+                    <tr>
+                        <td>Medicamento 3</td>
+                        <td>Tipo 3</td>
+                        <td>Stock</td>
+                        <td>Fecha</td>
+                    </tr>
+                    <tr>
+                        <td>Medicamento 4</td>
+                        <td>Tipo 4</td>
+                        <td>Stock</td>
+                        <td>Fecha</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form id="add-medicamento">
+                <input type="text" placeholder="Nombre del medicamento">
+                <input type="text" placeholder="Tipo">
+                <input type="number" placeholder="Stock">
+                <input type="date" placeholder="Fecha de caducidad">
+                <button type="submit">Añadir Medicamento</button>
+            </form>
+        </section>
+        <section class="dashboard-section" id="lentes">
+            <div class="section-title">Inventario de Lentes</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Graduación</th>
+                        <th>Material</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lente 1</td>
+                        <td>Graduación 1</td>
+                        <td>Material</td>
+                        <td>Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Lente 2</td>
+                        <td>Graduación 2</td>
+                        <td>Material</td>
+                        <td>Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Lente 3</td>
+                        <td>Graduación 3</td>
+                        <td>Material</td>
+                        <td>Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Lente 4</td>
+                        <td>Graduación 4</td>
+                        <td>Material</td>
+                        <td>Stock</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form id="add-lente">
+                <select>
+                    <option value="">Seleccionar tipo</option>
+                    <option value="monofocal">Monofocal</option>
+                    <option value="bifocal">Bifocal</option>
+                    <option value="progresivo">Progresivo</option>
+                    <option value="contacto">Contacto</option>
+                </select>
+                <input type="text" placeholder="Graduación">
+                <input type="text" placeholder="Material">
+                <input type="number" placeholder="Stock">
+                <button type="submit">Añadir Lente</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="index-wareframes.html">Volver</a>
+        <p>&copy; 2024 Consultorio Oftalmológico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Doctor - Consultorio Oftalmológico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="flex">
+        <h1>Dashboard Doctor - Consultorio Oftalmológico</h1>
+        <nav>
+            <ul>
+                <li><a href="#pacientes">Pacientes</a></li>
+                <li><a href="#citas">Citas</a></li>
+                <li><a href="#historial">Historial Médico</a></li>
+                <li><a href="login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="grid">
+        <section class="dashboard-section sec-table" id="citas">
+            <h2>Citas del Día</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Paciente</th>
+                        <th>Tipo de Consulta</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00</td>
+                        <td>Juan Pérez</td>
+                        <td>Examen de la vista</td>
+                        <td><span class="status status-scheduled">Programada</span></td>
+                    </tr>
+                    <tr>
+                        <td>10:30</td>
+                        <td>María González</td>
+                        <td>Control de glaucoma</td>
+                        <td><span class="status status-in-progress">En progreso</span></td>
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                        <td>Carlos Rodríguez</td>
+                        <td>Cirugía de cataratas</td>
+                        <td><span class="status status-scheduled">Programada</span></td>
+                    </tr>
+                    <tr>
+                        <td>14:30</td>
+                        <td>Ana Martínez</td>
+                        <td>Control de miopía</td>
+                        <td><span class="status status-completed">Completada</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="dashboard-section sec-table" id="pacientes">
+            <h2>Lista de Pacientes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Última Consulta</th>
+                        <th>Próxima Cita</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>45</td>
+                        <td>15/02/2024</td>
+                        <td>Hoy, 09:00</td>
+                    </tr>
+                    <tr>
+                        <td>María González</td>
+                        <td>62</td>
+                        <td>01/03/2024</td>
+                        <td>Hoy, 10:30</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Rodríguez</td>
+                        <td>58</td>
+                        <td>10/03/2024</td>
+                        <td>Hoy, 12:00</td>
+                    </tr>
+                    <tr>
+                        <td>Ana Martínez</td>
+                        <td>35</td>
+                        <td>20/02/2024</td>
+                        <td>Hoy, 14:30</td>
+                    </tr>
+                    <tr>
+                        <td>Luis Sánchez</td>
+                        <td>50</td>
+                        <td>05/03/2024</td>
+                        <td>18/03/2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <a href="index-pages.html">Volver</a>
+        <p>&copy; 2024 Consultorio Oftalmológico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

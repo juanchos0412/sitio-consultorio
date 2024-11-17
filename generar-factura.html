@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Factura - Consultorio Oftalmológico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="flex">
+        <h1>Consultorio Oftalmológico</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard-doctor.html">Dashboard</a></li>
+                <li><a href="dashboard-inventario.html">Inventario</a></li>
+                <li><a href="#pacientes">Pacientes</a></li>
+                <li><a href="#citas">Citas</a></li>
+                <li><a href="login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="grid">
+        <form id="factura-form">
+            <h2>Generar Factura</h2>
+            <div class="form-group">
+                <label for="paciente">Paciente:</label>
+                <input type="text" id="paciente" name="paciente" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="servicio">Servicio:</label>
+                <input type="text" id="servicio" name="servicio" required>
+            </div>
+            <div class="form-group">
+                <label for="monto">Monto:</label>
+                <input type="number" id="monto" name="monto" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="metodo-pago">Método de Pago:</label>
+                <select id="metodo-pago" name="metodo-pago" required>
+                    <option value="">Seleccione un método</option>
+                    <option value="efectivo">Efectivo</option>
+                    <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                    <option value="transferencia">Transferencia Bancaria</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="notas">Notas Adicionales:</label>
+                <textarea id="notas" name="notas" rows="3"></textarea>
+            </div>
+            <button type="button" id="generar-pdf">Generar PDF</button>
+            <button type="button" id="generar-enlace">Generar Enlace de Pago</button>
+        </form>
+        <div class="preview">
+            <h2>Vista Previa de Factura</h2>
+            <div class="preview-content" id="preview-factura">
+                <!-- La vista previa de la factura se generará aquí -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="index-pages.html">Volver</a>
+        <p>&copy; 2024 Consultorio Oftalmológico. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+
+    </script>
+</body>
+</html>

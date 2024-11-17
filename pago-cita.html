@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago de Cita - Consultorio Oftalmológico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="flex">
+        <h1>Consultorio Oftalmológico</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#citas">Citas</a></li>
+                <li><a href="#pacientes">Pacientes</a></li>
+                <li><a href="#reportes">Reportes</a></li>
+                <li><a href="login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <h2>Pago de Cita</h2>
+            <div class="payment-summary">
+                <h3>Resumen de la Cita</h3>
+                <p><strong>Paciente:</strong> Juan Pérez</p>
+                <p><strong>Fecha:</strong> 15 de marzo, 2024</p>
+                <p><strong>Hora:</strong> 09:00 AM</p>
+                <p><strong>Doctor:</strong> Dra. María González</p>
+                <p><strong>Tipo de Consulta:</strong> Examen de la vista</p>
+                <p><strong>Monto a Pagar:</strong> $100.00</p>
+            </div>
+            <div class="form-group">
+                <label for="card-holder">Nombre del Titular de la Tarjeta:</label>
+                <input type="text" id="card-holder" name="card-holder" required>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Número de Tarjeta:</label>
+                <input type="text" id="card-number" name="card-number" required pattern="\d{16}" title="Ingrese los 16 dígitos de su tarjeta">
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Fecha de Vencimiento:</label>
+                <input type="text" id="expiry-date" name="expiry-date" required pattern="\d{2}/\d{2}" placeholder="MM/YY" title="Ingrese la fecha en formato MM/YY">
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required pattern="\d{3,4}" title="Ingrese los 3 o 4 dígitos del CVV">
+            </div>
+            <div class="form-group">
+                <label for="payment-method">Método de Pago:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="">Seleccione un método de pago</option>
+                    <option value="credit">Tarjeta de Crédito</option>
+                    <option value="debit">Tarjeta de Débito</option>
+                </select>
+            </div>
+            <button type="submit">Realizar Pago</button>
+        </form>
+    </main>
+    <footer>
+        <a href="index-pages.html">Volver</a>
+        <p>&copy; 2024 Consultorio Oftalmológico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

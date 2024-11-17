@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita - Consultorio Oftalmológico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="flex">
+        <h1>Consultorio Oftalmológico</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#citas">Citas</a></li>
+                <li><a href="#pacientes">Pacientes</a></li>
+                <li><a href="#reportes">Reportes</a></li>
+                <li><a href="login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <h2>Agendar Cita</h2>
+            <div class="form-group">
+                <label for="patient-name">Nombre del Paciente:</label>
+                <input type="text" id="patient-name" name="patient-name" required>
+            </div>
+            <div class="form-group">
+                <label for="patient-email">Correo Electrónico:</label>
+                <input type="email" id="patient-email" name="patient-email" required>
+            </div>
+            <div class="form-group">
+                <label for="patient-phone">Teléfono:</label>
+                <input type="tel" id="patient-phone" name="patient-phone" required>
+            </div>
+            <div class="form-group">
+                <label for="appointment-date">Fecha de la Cita:</label>
+                <input type="date" id="appointment-date" name="appointment-date" required>
+            </div>
+            <div class="form-group">
+                <label for="appointment-time">Hora de la Cita:</label>
+                <input type="time" id="appointment-time" name="appointment-time" required>
+            </div>
+            <div class="form-group">
+                <label for="doctor">Doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="">Seleccione un doctor</option>
+                    <option value="dra-gonzalez">Dra. María González</option>
+                    <option value="dr-sanchez">Dr. Carlos Sánchez</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="consultation-type">Tipo de Consulta:</label>
+                <select id="consultation-type" name="consultation-type" required>
+                    <option value="">Seleccione el tipo de consulta</option>
+                    <option value="examen-vista">Examen de la vista</option>
+                    <option value="control-glaucoma">Control de glaucoma</option>
+                    <option value="cirugia-cataratas">Cirugía de cataratas</option>
+                    <option value="control-miopia">Control de miopía</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="notes">Notas adicionales:</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+            </div>
+            <button type="submit">Agendar Cita</button>
+        </form>
+    </main>
+    <footer>
+        <a href="index-pages.html">Volver</a>
+        <p>&copy; 2024 Consultorio Oftalmológico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

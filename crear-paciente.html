@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Nuevo Paciente - Consultorio Oftalmológico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="flex">
+        <h1>Consultorio Oftalmológico</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard-doctor.html">Dashboard</a></li>
+                <li><a href="#pacientes">Pacientes</a></li>
+                <li><a href="#citas">Citas</a></li>
+                <li><a href="#historial">Historial Médico</a></li>
+                <li><a href="login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="masonary" action="#" method="post">
+            <h2>Crear Nuevo Paciente</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                </div>
+                <div class="form-group">
+                    <label for="genero">Género:</label>
+                    <select id="genero" name="genero" required>
+                        <option value="">Seleccione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="antecedentes-medicos">Antecedentes Médicos:</label>
+                <textarea id="antecedentes-medicos" name="antecedentes-medicos" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="alergias">Alergias:</label>
+                <input type="text" id="alergias" name="alergias">
+            </div>
+            <div class="form-group">
+                <label for="medicamentos">Medicamentos Actuales:</label>
+                <input type="text" id="medicamentos" name="medicamentos">
+            </div>
+            <div class="form-group">
+                <label for="seguro-medico">Seguro Médico:</label>
+                <input type="text" id="seguro-medico" name="seguro-medico">
+            </div>
+            <div class="form-group">
+                <label for="notas-adicionales">Notas Adicionales:</label>
+                <textarea id="notas-adicionales" name="notas-adicionales" rows="4"></textarea>
+            </div>
+            <button class="ml-1" type="submit">Crear Paciente</button>
+        </form>
+    </main>
+    <footer>
+        <a href="index-pages.html">Volver</a>
+        <p>&copy; 2024 Consultorio Oftalmológico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+    font-family: 'Patrick Hand', sans-serif; /* Aplicar la fuente Patrick Hand */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+header {
+    background-color: #b0b0b0;
+    color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.wireframe {
+    background-color: #e0e0e0;
+    border: 1px dashed #333;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+.wireframe h2 {
+    margin-top: 0;
+    color: #333;
+}
+.container{
+    max-width: 1366px;
+    min-width: 1000px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+}
+footer {
+    background-color: #b0b0b0;
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+}
+footer a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.dashboard-section {
+    background-color: #e0e0e0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px dashed #333;
+}
+.dashboard-section h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    text-align: left;
+    padding: 0.75rem;
+    border-bottom: 1px solid #bbb;
+}
+th {
+    background-color: #ccc;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #e0e0e0;
+}
+.status {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+.status-scheduled {
+    background-color: #cfe9f0;
+    color: #336b8d;
+}
+.status-in-progress {
+    background-color: #f5f0c3;
+    color: #9c8d2e;
+}
+.status-completed {
+    background-color: #c9f0c9;
+    color: #317b38;
+}
+.link-container.wireframe{
+    flex-direction: column;
+}
+.link-container a{
+    color: #000;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.link-container a:hover{
+    text-decoration: underline;
+}

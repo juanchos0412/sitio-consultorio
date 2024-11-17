@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Inventario - Consultorio Oftalmológico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="flex">
+        <h1>Consultorio Oftalmológico</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard-doctor.html">Dashboard</a></li>
+                <li><a href="dashboard-inventario.html">Inventario</a></li>
+                <li><a href="#pacientes">Pacientes</a></li>
+                <li><a href="#citas">Citas</a></li>
+                <li><a href="login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="crear-inventario" action="#" method="post">
+            <h2>Crear Nuevo Item de Inventario</h2>
+            <div class="form-group">
+                <label for="tipo-item">Tipo de Item:</label>
+                <select id="tipo-item" name="tipo-item" required>
+                    <option value="">Seleccione el tipo de item</option>
+                    <option value="medicamento">Medicamento</option>
+                    <option value="lente">Lente</option>
+                </select>
+            </div>
+            
+            <!-- Campos para Medicamentos -->
+            <div id="campos-medicamento" class="hidden">
+                <div class="form-group">
+                    <label for="nombre-medicamento">Nombre del Medicamento:</label>
+                    <input type="text" id="nombre-medicamento" name="nombre-medicamento">
+                </div>
+                <div class="form-group">
+                    <label for="tipo-medicamento">Tipo de Medicamento:</label>
+                    <input type="text" id="tipo-medicamento" name="tipo-medicamento" placeholder="Ej: Gotas para glaucoma">
+                </div>
+                <div class="form-group">
+                    <label for="stock-medicamento">Stock:</label>
+                    <input type="number" id="stock-medicamento" name="stock-medicamento" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="fecha-caducidad">Fecha de Caducidad:</label>
+                    <input type="date" id="fecha-caducidad" name="fecha-caducidad">
+                </div>
+                <div class="form-group">
+                    <label for="descripcion-medicamento">Descripción:</label>
+                    <textarea id="descripcion-medicamento" name="descripcion-medicamento" rows="3"></textarea>
+                </div>
+            </div>
+            
+            <!-- Campos para Lentes -->
+            <div id="campos-lente" class="hidden">
+                <div class="form-group">
+                    <label for="tipo-lente">Tipo de Lente:</label>
+                    <select id="tipo-lente" name="tipo-lente">
+                        <option value="">Seleccione el tipo de lente</option>
+                        <option value="monofocal">Monofocal</option>
+                        <option value="bifocal">Bifocal</option>
+                        <option value="progresivo">Progresivo</option>
+                        <option value="contacto">Lente de contacto</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="graduacion">Graduación:</label>
+                    <input type="text" id="graduacion" name="graduacion" placeholder="Ej: -2.00 o +1.50 / +3.00">
+                </div>
+                <div class="form-group">
+                    <label for="material-lente">Material:</label>
+                    <input type="text" id="material-lente" name="material-lente" placeholder="Ej: Policarbonato, Cristal, Resina">
+                </div>
+                <div class="form-group">
+                    <label for="stock-lente">Stock:</label>
+                    <input type="number" id="stock-lente" name="stock-lente" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="descripcion-lente">Descripción:</label>
+                    <textarea id="descripcion-lente" name="descripcion-lente" rows="3"></textarea>
+                </div>
+            </div>
+            
+            <button type="submit">Crear Item</button>
+        </form>
+    </main>
+    <footer>
+        <a href="index-pages.html">Volver</a>
+        <p>&copy; 2024 Consultorio Oftalmológico. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

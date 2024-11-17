@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Inventario - Consultorio Oftalmológico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="flex">
+        <h1>Dashboard de Inventario - Consultorio Oftalmológico</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard-doctor.html">Dashboard Principal</a></li>
+                <li><a href="#pacientes">Pacientes</a></li>
+                <li><a href="#citas">Citas</a></li>
+                <li><a href="#inventario">Inventario</a></li>
+                <li><a href="login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="grid">
+        <section class="dashboard-section" id="medicamentos">
+            <h2>Inventario de Medicamentos</h2>
+            <table class="full">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Stock</th>
+                        <th>Fecha de Caducidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Latanoprost</td>
+                        <td>Gotas para glaucoma</td>
+                        <td class="stock-high">50</td>
+                        <td>2025-06-30</td>
+                    </tr>
+                    <tr>
+                        <td>Timolol</td>
+                        <td>Gotas para glaucoma</td>
+                        <td class="stock-medium">25</td>
+                        <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                        <td>Ciclosporina</td>
+                        <td>Gotas para ojo seco</td>
+                        <td class="stock-low">5</td>
+                        <td>2024-09-30</td>
+                    </tr>
+                    <tr>
+                        <td>Tobramicina</td>
+                        <td>Antibiótico oftálmico</td>
+                        <td class="stock-high">40</td>
+                        <td>2025-03-31</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form id="add-medicamento" class="grid">
+                <input type="text" placeholder="Nombre del medicamento" required>
+                <input type="text" placeholder="Tipo" required>
+                <input type="number" placeholder="Stock" required>
+                <input type="date" placeholder="Fecha de caducidad" required>
+                <button type="submit">Añadir Medicamento</button>
+            </form>
+        </section>
+        <section class="dashboard-section" id="lentes">
+            <h2>Inventario de Lentes</h2>
+            <table class="full">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Graduación</th>
+                        <th>Material</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monofocales</td>
+                        <td>-2.00</td>
+                        <td>Policarbonato</td>
+                        <td class="stock-high">30</td>
+                    </tr>
+                    <tr>
+                        <td>Bifocales</td>
+                        <td>+1.50 / +3.00</td>
+                        <td>Cristal</td>
+                        <td class="stock-medium">15</td>
+                    </tr>
+                    <tr>
+                        <td>Progresivos</td>
+                        <td>-1.75 a +2.25</td>
+                        <td>Resina</td>
+                        <td class="stock-low">8</td>
+                    </tr>
+                    <tr>
+                        <td>Lentes de contacto</td>
+                        <td>-3.50</td>
+                        <td>Hidrogel de silicona</td>
+                        <td class="stock-high">100</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form id="add-lente" class="grid">
+                <select required>
+                    <option value="">Seleccione el tipo</option>
+                    <option value="monofocal">Monofocal</option>
+                    <option value="bifocal">Bifocal</option>
+                    <option value="progresivo">Progresivo</option>
+                    <option value="contacto">Lente de contacto</option>
+                </select>
+                <input type="text" placeholder="Graduación" required>
+                <input type="text" placeholder="Material" required>
+                <input type="number" placeholder="Stock" required>
+                <button type="submit">Añadir Lente</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="index-pages.html">Volver</a>
+        <p>&copy; 2024 Consultorio Oftalmológico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
